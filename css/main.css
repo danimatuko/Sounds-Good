@@ -214,3 +214,27 @@ body {
   #contact .contact-map {
     width: 90%;
     height: 95%; }
+
+/* Footer */
+#footer {
+  background: #17171a; }
+  #footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    #footer .footer-content > div:not(:last-child) {
+      border-right: 1px dotted #555;
+      height: 50%; }
+    #footer .footer-content i {
+      color: #DE9151;
+      padding: 0.4rem; }
+      #footer .footer-content i:hover {
+        cursor: pointer; }
+  #footer .footer-rights, #footer .footer-social, #footer .footer-payments {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #footer .footer-rights p, #footer .footer-social p, #footer .footer-payments p {
+      color: #F4F1DE; }

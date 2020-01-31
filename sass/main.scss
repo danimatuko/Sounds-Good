@@ -194,3 +194,40 @@ body {
         }
     }
 }
+
+
+/* Footer */
+
+#footer {
+    background: $dark-color;
+    .footer {
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &>div:not(:last-child) {
+                border-right: 1px dotted #555;
+                height: 50%;
+            }
+            i {
+                color: $secondary-color;
+                padding: 0.4rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        &-rights,
+        &-social,
+        &-payments {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: $light-color;
+            }
+        }
+    }
+}
