@@ -73,7 +73,7 @@ body {
                 transition: 0.3s ease-out;
                 a {
                     font-size: 1.2rem;
-                    transition: 0.8s ease-out;
+                    transition: 0.3s ease-out;
                 }
             }
             a {
@@ -133,9 +133,64 @@ body {
             }
             &:hover {
                 transform: scale(1.03);
-                transition: 0.5s ease-out;
+                transition: 0.3s ease-out;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+
+/* Contact */
+
+#contact {
+    background: $secondary-color;
+    padding: 3rem 0;
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+    .contact {
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-around;
+            align-items: center;
+        }
+        &-text form {
+            display: flex;
+            flex-direction: column;
+            .form-field {
+                margin-bottom: 0.5rem;
+            }
+            label {
+                margin-bottom: 0.5rem;
+                color: $dark-color;
+                font-size: 1.1rem;
+                font-weight: bolder;
+            }
+            input {
+                width: 70%;
+                height: 2.5rem;
+                border: none;
+                border-radius: 5px;
+            }
+            textarea {
+                width: 70%;
+                border-radius: 5px;
+            }
+            input[type='submit'] {
+                margin: 1.2rem 0;
+                padding: 0.6rem 1.2rem;
+                color: $light-color;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        &-map {
+            width: 90%;
+            height: 95%;
         }
     }
 }

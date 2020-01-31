@@ -51,11 +51,20 @@
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     font-size: 1.3rem;
+    border: none;
     &-primary {
         @extend .btn;
         background: $primary-color;
         &:hover {
             background: $secondary-color;
+            transition: 0.7s ease-out;
+        }
+    }
+    &-dark {
+        @extend .btn;
+        background: $dark-color;
+        &:hover {
+            background: $medium-color;
             transition: 0.7s ease-out;
         }
     }
