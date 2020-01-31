@@ -53,6 +53,7 @@ body {
 
 #main-nav {
     position: sticky;
+    width: 100%;
     top: 0;
     left: 0;
     background: $dark-color;
@@ -80,21 +81,6 @@ body {
                 font-size: 1.1rem;
             }
         }
-    }
-}
-
-
-/* About */
-
-.about-section {
-    h2 {
-        text-align: center;
-        font-size: 2rem;
-        color: $secondary-color;
-    }
-    p {
-        color: $dark-color;
-        border-left: 3px solid $secondary-color;
     }
 }
 
@@ -141,6 +127,21 @@ body {
 }
 
 
+/* About */
+
+.about-section {
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: $secondary-color;
+    }
+    p {
+        color: $dark-color;
+        border-left: 3px solid $secondary-color;
+    }
+}
+
+
 /* Contact */
 
 #contact {
@@ -160,6 +161,7 @@ body {
         &-text form {
             display: flex;
             flex-direction: column;
+            align-items: center;
             .form-field {
                 margin-bottom: 0.5rem;
             }
@@ -231,3 +233,8 @@ body {
         }
     }
 }
+
+
+/* Media Quries */
+
+@import 'media';

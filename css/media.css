@@ -1,0 +1,24 @@
+/* Tablets */
+@media (max-width: 768px) {
+  /* Products */
+  #products .cards {
+    grid-template-columns: repeat(2, 1fr); }
+    #products .cards li:last-child {
+      display: none; }
+  /* Contact */
+  #contact .contact-content {
+    grid-template-columns: 1fr; }
+    #contact .contact-content .contact-map {
+      width: 70vw;
+      height: 400px; }
+  /* Footer */
+  #footer .footer-content {
+    grid-template-columns: 1fr; }
+    #footer .footer-content > div {
+      padding: 2.5rem auto;
+      border: none !important; }
+      #footer .footer-content > div:not(.footer-rights) {
+        border-bottom: 1px dotted #555 !important; }
+    #footer .footer-content .footer-rights {
+      grid-row-start: 3;
+      grid-row-end: 4; } }

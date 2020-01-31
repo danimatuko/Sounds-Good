@@ -111,6 +111,7 @@ body {
 /* Navigation */
 #main-nav {
   position: sticky;
+  width: 100%;
   top: 0;
   left: 0;
   background: #17171a;
@@ -132,16 +133,6 @@ body {
           transition: 0.3s ease-out; }
       #main-nav .menu-item a {
         font-size: 1.1rem; }
-
-/* About */
-.about-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #DE9151; }
-
-.about-section p {
-  color: #17171a;
-  border-left: 3px solid #DE9151; }
 
 /* Products Section */
 #products {
@@ -175,6 +166,16 @@ body {
         transition: 0.3s ease-out;
         cursor: pointer; }
 
+/* About */
+.about-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #DE9151; }
+
+.about-section p {
+  color: #17171a;
+  border-left: 3px solid #DE9151; }
+
 /* Contact */
 #contact {
   background: #DE9151;
@@ -189,7 +190,8 @@ body {
     align-items: center; }
   #contact .contact-text form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     #contact .contact-text form .form-field {
       margin-bottom: 0.5rem; }
     #contact .contact-text form label {
@@ -238,3 +240,35 @@ body {
     justify-content: center; }
     #footer .footer-rights p, #footer .footer-social p, #footer .footer-payments p {
       color: #F4F1DE; }
+
+/* Media Quries */
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; }
+  /* Products */
+  #products .cards {
+    grid-template-columns: repeat(2, 1fr); }
+    #products .cards li:last-child {
+      display: none; }
+  /* Contact */
+  #contact .contact-content {
+    grid-template-columns: 1fr; }
+    #contact .contact-content .contact-map {
+      width: 70vw;
+      height: 400px; }
+  /* Footer */
+  #footer .footer-content {
+    grid-template-columns: 1fr; }
+    #footer .footer-content i {
+      padding: 0 1rem;
+      font-size: 2.5rem; }
+    #footer .footer-content > div {
+      padding: 2.5rem auto;
+      border: none !important; }
+      #footer .footer-content > div:not(.footer-rights) {
+        border-bottom: 1px dotted #66717E !important;
+        height: 100%; }
+    #footer .footer-content .footer-rights {
+      grid-row-start: 3;
+      grid-row-end: 4; } }
