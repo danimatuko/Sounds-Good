@@ -56,7 +56,7 @@ body {
     top: 0;
     left: 0;
     background: $dark-color;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
     .nav-content {
         display: flex;
@@ -78,6 +78,63 @@ body {
             }
             a {
                 font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+
+/* About */
+
+.about-section {
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: $secondary-color;
+    }
+    p {
+        color: $dark-color;
+        border-left: 3px solid $secondary-color;
+    }
+}
+
+
+/* Products Section */
+
+#products {
+    background: $secondary-color;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: $light-color;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.3rem;
+        // card
+        .card {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 0.5rem;
+            height: 100%;
+            border-radius: 4px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4), -1px -1px 5px rgba(0, 0, 0, 0.4);
+            h3 {
+                font-size: 1rem;
+            }
+            .price {
+                color: $primary-color;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            &:hover {
+                transform: scale(1.03);
+                transition: 0.5s ease-out;
+                cursor: pointer;
             }
         }
     }
