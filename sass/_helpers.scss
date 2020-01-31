@@ -1,0 +1,62 @@
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Padding */
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+
+/* Margin */
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+
+/* Active menu item */
+
+.active-menu-item {
+    background: $primary-color;
+}
+
+
+/* Buttons */
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    &-primary {
+        @extend .btn;
+        background: $primary-color;
+        &:hover {
+            background: $secondary-color;
+            transition: 0.7s ease-out;
+        }
+    }
+}

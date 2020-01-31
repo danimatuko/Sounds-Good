@@ -1,0 +1,15 @@
+{
+    "name": "sounds-good",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "node-sass": "^4.13.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "sass": "node-sass -w sass/ -o css/ --recursive"
+    },
+    "author": "",
+    "license": "ISC"
+}

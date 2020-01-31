@@ -1,0 +1,126 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem; }
+
+P {
+  padding: 0 1.5rem; }
+
+/* COLORS */
+.container {
+  width: 75%;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+/* Padding */
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+/* Active menu item */
+.active-menu-item {
+  background: #fdb14e; }
+
+/* Buttons */
+.btn, .btn-primary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.3rem; }
+  .btn-primary {
+    background: #fdb14e; }
+    .btn-primary:hover {
+      background: #DE9151;
+      transition: 0.7s ease-out; }
+
+body {
+  background: #F4F1DE;
+  font-family: 'Roboto Mono', monospace; }
+
+/* Header */
+#header .header-showcase {
+  position: relative;
+  background: url("../images/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Overlay */ }
+  #header .header-showcase::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+#header .header-content {
+  z-index: 1; }
+  #header .header-content h1 {
+    font-size: 4rem;
+    color: #fff;
+    word-spacing: -1.5rem; }
+    #header .header-content h1 span {
+      color: #fdb14e; }
+  #header .header-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px #DE9151; }
+
+/* Navigation */
+#main-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #17171a;
+  z-index: 1;
+  opacity: 1; }
+  #main-nav .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  #main-nav .menu {
+    display: flex; }
+    #main-nav .menu-item {
+      padding: 1.3rem 1.7rem; }
+      #main-nav .menu-item:hover {
+        background: #DE9151;
+        transition: 0.3s ease-out; }
+        #main-nav .menu-item:hover a {
+          font-size: 1.2rem;
+          transition: 0.8s ease-out; }
+      #main-nav .menu-item a {
+        font-size: 1.1rem; }
