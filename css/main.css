@@ -74,6 +74,9 @@ P {
 .open {
   transform: translateX(0) !important; }
 
+.pressed {
+  transform: rotateZ(360deg); }
+
 body {
   background: #F4F1DE;
   font-family: 'Roboto Mono', monospace; }
@@ -263,7 +266,8 @@ body {
     font-size: 14px; }
   /* Header */
   #header .hamburger {
-    display: block; }
+    display: block;
+    transition: 0.5s ease-in-out; }
   /* Navigation */
   #main-nav {
     position: fixed;

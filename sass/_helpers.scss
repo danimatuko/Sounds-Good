@@ -73,3 +73,7 @@
 .open {
     transform: translateX(0) !important;
 }
+
+.pressed {
+    transform: rotateZ(360deg);
+}
