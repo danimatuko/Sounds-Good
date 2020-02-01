@@ -9,6 +9,7 @@ body {
 /* Header */
 
 #header {
+    position: relative;
     .header-showcase {
         position: relative;
         background: url('../images/showcase.jpg') no-repeat center center/cover;
@@ -46,6 +47,17 @@ body {
             text-shadow: 1px 1px 2px $secondary-color;
         }
     }
+    .hamburger {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        display: none;
+        background: none;
+        border: none;
+        outline: none;
+        color: $primary-color;
+        z-index: 3;
+    }
 }
 
 
@@ -63,12 +75,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            outline: none;
-        }
         .menu {
             display: flex;
             align-items: center;
