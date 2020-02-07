@@ -64,13 +64,13 @@ body {
 /* Navigation */
 
 #main-nav {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background: $dark-color;
     z-index: 2;
-    opacity: 1;
+    transition: top 0.4s; // Transition effect when sliding down and up 
     .nav-content {
         display: flex;
         justify-content: space-between;
