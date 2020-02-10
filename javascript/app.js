@@ -28,9 +28,9 @@ menuItems.forEach(function(item) {
 
 /* Desktop - Show menu on scroll up */
 
-if (screen.width > 768) {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    if (window.matchMedia("(min-width: 768px)").matches) {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             menu.style.top = "0";
@@ -38,8 +38,9 @@ if (screen.width > 768) {
             menu.style.top = "-100px";
         }
         prevScrollpos = currentScrollPos;
-    };
-}
+    }
+};
+
 
 
 /* Mobile - open\close menu */
